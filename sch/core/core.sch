@@ -813,8 +813,6 @@ NoConn ~ 2400 2300
 NoConn ~ 2400 2400
 NoConn ~ 2400 2600
 NoConn ~ 2400 2700
-NoConn ~ 2400 2800
-NoConn ~ 2400 2900
 NoConn ~ 2400 3700
 NoConn ~ 4050 3100
 NoConn ~ 4050 3000
@@ -832,8 +830,6 @@ NoConn ~ 5850 2400
 NoConn ~ 5850 3500
 NoConn ~ 5850 3600
 NoConn ~ 5850 3700
-NoConn ~ 5850 2700
-NoConn ~ 5850 2600
 Text Label 5950 2800 0    50   ~ 0
 A_MCK
 NoConn ~ 5850 2900
@@ -847,8 +843,6 @@ NoConn ~ 7400 3100
 NoConn ~ 7400 3200
 NoConn ~ 7400 3300
 NoConn ~ 7400 3400
-NoConn ~ 9200 2200
-NoConn ~ 9200 2300
 NoConn ~ 9200 2400
 NoConn ~ 9200 3600
 NoConn ~ 9200 3700
@@ -898,6 +892,127 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 $EndComp
 Wire Wire Line
 	2400 2500 3200 2500
+Entry Wire Line
+	3200 2500 3300 2600
+Text Label 2500 2500 0    50   ~ 0
+CRYST_1
+Wire Wire Line
+	2550 5700 3200 5700
+Wire Wire Line
+	2550 5800 3200 5800
+Wire Wire Line
+	2550 5900 3200 5900
+Wire Wire Line
+	2550 6000 3200 6000
+Wire Wire Line
+	2550 6100 3200 6100
+Wire Wire Line
+	2550 6200 3200 6200
+$Comp
+L power:GND #PWR0146
+U 1 1 5C506B0F
+P 2950 5400
+F 0 "#PWR0146" H 2950 5150 50  0001 C CNN
+F 1 "GND" H 2955 5227 50  0000 C CNN
+F 2 "" H 2950 5400 50  0001 C CNN
+F 3 "" H 2950 5400 50  0001 C CNN
+	1    2950 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J10
+U 1 1 5C510D95
+P 2350 5900
+F 0 "J10" H 2270 5275 50  0000 C CNN
+F 1 "Conn_01x08" H 2270 5366 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 2350 5900 50  0001 C CNN
+F 3 "~" H 2350 5900 50  0001 C CNN
+	1    2350 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0147
+U 1 1 5C52548A
+P 2750 5450
+F 0 "#PWR0147" H 2750 5300 50  0001 C CNN
+F 1 "+3.3V" H 2765 5623 50  0000 C CNN
+F 2 "" H 2750 5450 50  0001 C CNN
+F 3 "" H 2750 5450 50  0001 C CNN
+	1    2750 5450
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3200 5700 3300 5800
+Entry Wire Line
+	3200 5800 3300 5900
+Entry Wire Line
+	3200 5900 3300 6000
+Entry Wire Line
+	3200 6000 3300 6100
+Entry Wire Line
+	3200 6100 3300 6200
+Entry Wire Line
+	3200 6200 3300 6300
+Text Label 2650 5700 0    50   ~ 0
+C1
+Text Label 2650 5800 0    50   ~ 0
+C2
+Text Label 2650 5900 0    50   ~ 0
+C3
+Text Label 2650 6000 0    50   ~ 0
+C4
+Text Label 2650 6100 0    50   ~ 0
+C5
+Text Label 2650 6200 0    50   ~ 0
+C6
+Wire Wire Line
+	2400 2900 3200 2900
+Wire Wire Line
+	2400 2800 3200 2800
+Entry Wire Line
+	3200 2800 3300 2900
+Entry Wire Line
+	3200 2900 3300 3000
+Text Label 2500 2800 0    50   ~ 0
+C1
+Text Label 2500 2900 0    50   ~ 0
+C2
+Wire Wire Line
+	5850 2600 6650 2600
+Entry Wire Line
+	6650 2600 6750 2700
+Text Label 5950 2600 0    50   ~ 0
+C3
+Wire Wire Line
+	5850 2700 6650 2700
+Entry Wire Line
+	6650 2700 6750 2800
+Text Label 5950 2700 0    50   ~ 0
+C4
+Wire Wire Line
+	9200 2200 10000 2200
+Wire Wire Line
+	9200 2300 10000 2300
+Entry Wire Line
+	10000 2300 10100 2400
+Entry Wire Line
+	10000 2200 10100 2300
+Text Label 9250 2200 0    50   ~ 0
+C5
+Text Label 9250 2300 0    50   ~ 0
+C6
+Wire Wire Line
+	2750 5450 2750 5500
+Wire Wire Line
+	2750 5500 2550 5500
+Wire Wire Line
+	2950 5400 2950 5350
+Wire Wire Line
+	2950 5350 2850 5350
+Wire Wire Line
+	2850 5350 2850 5600
+Wire Wire Line
+	2850 5600 2550 5600
 Wire Bus Line
 	6750 3950 10100 3950
 Wire Bus Line
@@ -908,8 +1023,4 @@ Wire Bus Line
 	8150 4050 8150 6500
 Wire Bus Line
 	3300 1750 3300 6500
-Entry Wire Line
-	3200 2500 3300 2600
-Text Label 2500 2500 0    50   ~ 0
-CRYST_1
 $EndSCHEMATC
