@@ -1,0 +1,5 @@
+/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles/rebuild_cache.dir
+/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles/edit_cache.dir
+/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles/core_src.bin.dir
+/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles/core_src.elf.dir
+/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles/core_src.hex.dir

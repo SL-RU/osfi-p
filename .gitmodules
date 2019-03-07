@@ -1,0 +1,3 @@
+[submodule "MakiseGUI"]
+	path = core_src/MakiseGUI
+	url = https://github.com/SL-RU/MakiseGUI

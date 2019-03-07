@@ -1013,6 +1013,8 @@ Wire Wire Line
 	2850 5350 2850 5600
 Wire Wire Line
 	2850 5600 2550 5600
+NoConn ~ 8850 5150
+NoConn ~ 8850 5250
 Wire Bus Line
 	6750 3950 10100 3950
 Wire Bus Line
