@@ -2,19 +2,23 @@
 #include "ili9341.h"
 #include "stm32f4xx_hal_tim.h"
 #include "spi.h"
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
 
-extern inline void _ili9341_delay(uint32_t x) { HAL_Delay(x); }
+extern inline void _ili9341_delay(uint32_t x) { osDelay(x); }
 extern inline void _ili9341_rst(uint8_t st){HAL_GPIO_WritePin(ILI9341_RST, st ? GPIO_PIN_SET : GPIO_PIN_RESET);}
 extern inline void _ili9341_cs(uint8_t st){HAL_GPIO_WritePin(ILI9341_CS, st ? GPIO_PIN_SET : GPIO_PIN_RESET);}
 extern inline void _ili9341_dc(uint8_t st){HAL_GPIO_WritePin(ILI9341_DC, st ? GPIO_PIN_SET : GPIO_PIN_RESET);}
 
-uint8_t ili9341_backlight = 0;
+void _ili9341_setAddrWindow(uint16_t x0, uint16_t y0, uint16_t x1,
+                            uint16_t y1);
+
 
 
 void ili9341_driver(MakiseDriver * d)
 {
-    d->lcd_height    = 240;
-    d->lcd_width     = 320;
+    d->lcd_height    = 320;
+    d->lcd_width     = 240;
     d->buffer_height = MAKISE_BUF_H;
     d->buffer_width  = MAKISE_BUF_W;
     d->pixeldepth    = 16;
@@ -144,10 +148,22 @@ uint8_t ili9341_init(MakiseGUI* gui)
     transmitCmdData(0xE1, data, 15);    	//Set Gamma
 
     ili9341_write_command(0x11);    	//Exit Sleep
-    HAL_Delay(120);
+    _ili9341_delay(120);
         
     ili9341_write_command(0x29);    //Display on
     ili9341_write_command(0x2c);
+
+    HAL_GPIO_WritePin(ILI9341_LED, GPIO_PIN_SET);
+
+    _ili9341_setAddrWindow(30, 30, 39, 39);
+    _ili9341_dc(1);
+    _ili9341_cs(0);
+
+    uint16_t da[100] = { 0xFAAF };
+    memset(da, 0xFA, 200);
+    HAL_SPI_Transmit(&ILI9341_SPI, (uint8_t*)da, 200, 100);
+
+
     
     return HAL_OK;
 }
@@ -186,12 +202,13 @@ void ili9341_tx(MakiseDriver* d)
     
     if(d->gui->draw != 0)
     {
-	d->gui->draw(d->gui);
+        d->gui->draw(d->gui);
     }
     
     _ili9341_setAddrWindow(0, d->posy, d->lcd_width, d->buffer_height - 1 + d->posy);
     makise_render(d->gui, 0);
-
+     
+    //_ili9341_cs(1);
     _ili9341_dc(1);
     _ili9341_cs(0);
 
@@ -200,24 +217,17 @@ void ili9341_tx(MakiseDriver* d)
 
 uint8_t ili9341_start(MakiseGUI* gui)
 {
-#if ILI9341_LED_USE_PWM
-    HAL_TIM_Base_Start(ILI9341_LED_PWM);
-    HAL_TIM_PWM_Start(ILI9341_LED_PWM, ILI9341_LED_PWM_CHANNEL);
-#endif
+/* #if ILI9341_LED_USE_PWM */
+/*     HAL_TIM_Base_Start(ILI9341_LED_PWM); */
+/*     HAL_TIM_PWM_Start(ILI9341_LED_PWM, ILI9341_LED_PWM_CHANNEL); */
+/* #endif */
 //    ili9341_set_backlight(1);
-    ili9341_set_backlight(gui, 31);
+    //ili9341_set_backlight(gui, 31);
     ili9341_tx(gui->driver);
+    printf("start driver\n");
+    return M_OK;
+}
 
-    return M_OK;
-}
-uint8_t ili9341_sleep(MakiseGUI* gui)
-{
-    return M_OK;
-}
-uint8_t ili9341_awake(MakiseGUI* gui)
-{
-    return M_OK;
-}
 uint8_t ili9341_set_backlight(MakiseGUI* gui, uint8_t val)
 {
 #if ILI9341_LED_USE_PWM
@@ -264,13 +274,13 @@ uint8_t ili9341_spi_txcplt(MakiseDriver* d)
     _ili9341_cs(0);
 
 
-    HAL_DMA_Start_IT(ILI9341_SPI.hdmatx, (uint32_t)d->buffer, (uint32_t)&ILI9341_SPI.Instance->DR, d->size);
-    /* Enable the SPI Error Interrupt Bit */
-    SET_BIT(ILI9341_SPI.Instance->CR2, SPI_CR2_ERRIE);
+    /* HAL_DMA_Start_IT(ILI9341_SPI.hdmatx, (uint32_t)d->buffer, (uint32_t)&ILI9341_SPI.Instance->DR, d->size); */
+    /* /\* Enable the SPI Error Interrupt Bit *\/ */
+    /* SET_BIT(ILI9341_SPI.Instance->CR2, SPI_CR2_ERRIE); */
 
-    /* Enable Tx DMA Request */
-    SET_BIT(ILI9341_SPI.Instance->CR2, SPI_CR2_TXDMAEN);
-    
+    /* /\* Enable Tx DMA Request *\/ */
+    /* SET_BIT(ILI9341_SPI.Instance->CR2, SPI_CR2_TXDMAEN); */
+    HAL_SPI_Transmit_DMA(&ILI9341_SPI, (uint8_t*)d->buffer, d->size);
     if(dr)
     {
 	if(d->gui->predraw != 0)
@@ -306,3 +316,5 @@ uint8_t ili9341_write_command(uint8_t c)
     HAL_SPI_Transmit(&ILI9341_SPI, &c, 1, 10);
     return c;
 }
+
+

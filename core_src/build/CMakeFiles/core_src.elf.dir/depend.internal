@@ -1168,19 +1168,23 @@ CMakeFiles/core_src.elf.dir/ILI9341/ili9341.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/ILI9341/ili9341.c
  /mnt/doc/prj/osfi-p/core_src/ILI9341/ili9341.h
@@ -1230,11 +1234,11 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/drivers/ILI9340C/ili9340.c.o
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/dma.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
  ../MakiseGUI/MakiseGUI/makise_colors.h
@@ -1298,7 +1302,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/drivers/SDL2/makise_sdl2.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
  ../MakiseGUI/MakiseGUI/makise_colors.h
@@ -1315,265 +1318,9 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/drivers/SDL2/makise_sdl2.c.o
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/drivers/SDL2/makise_sdl2.c
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/drivers/SDL2/makise_sdl2.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/fonts/Default10x20.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/Default10x20.c
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/fonts.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/fonts/Default5x7.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/Default5x7.c
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/fonts.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/fonts/Default6x10.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/Default6x10.c
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/fonts.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/fonts/Default8x13.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/Default8x13.c
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/fonts/fonts.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/makise_e.c.o
  ..//makise_config.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
@@ -1619,11 +1366,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/makise_e.c.o
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -1646,13 +1394,20 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/makise_e.c.o
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/makise_e.c
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/makise_e.h
@@ -1701,11 +1456,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_button
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -1729,13 +1485,20 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_button
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_buttons.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_canvas.c.o
@@ -1783,11 +1546,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_canvas
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -1811,261 +1575,25 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_canvas
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_canvas.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_fsviewer.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/fonts/fonts.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_fsviewer.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_lable.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_message_window.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slider.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slist.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_tabs.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_text_field.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_toggle.h
- ../MakiseGUI/MakiseGUI/gui/elements/makise_e.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_container.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_input.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
- ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_fsviewer.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_fsviewer_fatfs.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/fonts/fonts.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_fsviewer.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_lable.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_message_window.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slider.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slist.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_tabs.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_text_field.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_toggle.h
- ../MakiseGUI/MakiseGUI/gui/elements/makise_e.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_container.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_input.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
- ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_fsviewer_fatfs.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_fsviewer_stdio.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/fonts/fonts.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_fsviewer.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_lable.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_message_window.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slider.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slist.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_tabs.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_text_field.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_toggle.h
- ../MakiseGUI/MakiseGUI/gui/elements/makise_e.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_container.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_input.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
- ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_fsviewer_stdio.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_lable.c.o
  ..//makise_config.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
@@ -2111,11 +1639,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_lable.
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -2139,97 +1668,23 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_lable.
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_lable.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_message_window.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/fonts/fonts.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_fsviewer.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_lable.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_message_window.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slider.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slist.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_tabs.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_text_field.h
- ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_toggle.h
- ../MakiseGUI/MakiseGUI/gui/elements/makise_e.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_container.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_input.h
- ../MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
- ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_message_window.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slider.c.o
  ..//makise_config.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
@@ -2275,11 +1730,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slider
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -2303,13 +1759,20 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slider
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slider.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slist.c.o
@@ -2357,11 +1820,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slist.
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -2385,13 +1849,20 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slist.
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_slist.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_tabs.c.o
@@ -2439,11 +1910,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_tabs.c
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -2467,13 +1939,20 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_tabs.c
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_tabs.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_text_field.c.o
@@ -2521,11 +2000,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_text_f
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -2549,13 +2029,20 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_text_f
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_text_field.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_toggle.c.o
@@ -2603,11 +2090,12 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_toggle
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -2631,13 +2119,20 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_toggle
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/elements/src/makise_e_toggle.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/makise_gui.c.o
@@ -2689,7 +2184,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/makise_gui.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
@@ -2759,7 +2253,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/makise_gui_container.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
@@ -2829,7 +2322,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/makise_gui_elements.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
@@ -2899,7 +2391,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/makise_gui_input.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
@@ -2921,75 +2412,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/makise_gui_input.c.o
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui_input.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/gui/makise_gui_interface.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui_container.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui_input.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui_interface.c
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise.c.o
  ..//makise_config.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
@@ -3039,7 +2461,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
@@ -3055,69 +2476,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise.c.o
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_primitives.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_text.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_bitmap.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../MakiseGUI/MakiseGUI/makise.h
- ../MakiseGUI/MakiseGUI/makise_bitmap.h
- ../MakiseGUI/MakiseGUI/makise_colors.h
- ../MakiseGUI/MakiseGUI/makise_primitives.h
- ../MakiseGUI/MakiseGUI/makise_text.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_bitmap.c
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_colors.c.o
  ..//makise_config.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
@@ -3167,7 +2525,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_colors.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/makise.h
  ../MakiseGUI/MakiseGUI/makise_bitmap.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
@@ -3231,7 +2588,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_primitives.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
@@ -3247,69 +2603,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_primitives.c.o
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_primitives.h
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_text.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_primitives_default_drawer.c.o
- ..//makise_config.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
- ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
- ../Drivers/CMSIS/Include/cmsis_armcc.h
- ../Drivers/CMSIS/Include/cmsis_armclang.h
- ../Drivers/CMSIS/Include/cmsis_compiler.h
- ../Drivers/CMSIS/Include/cmsis_gcc.h
- ../Drivers/CMSIS/Include/cmsis_iccarm.h
- ../Drivers/CMSIS/Include/cmsis_version.h
- ../Drivers/CMSIS/Include/core_cm4.h
- ../Drivers/CMSIS/Include/mpu_armv7.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
- ../ILI9341/ili9341.h
- ../ILI9341/ili9341_registers.h
- ../Inc/FreeRTOSConfig.h
- ../Inc/gpio.h
- ../Inc/main.h
- ../Inc/spi.h
- ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
- ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_bitmap.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_colors.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_primitives.h
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_primitives_default_drawer.c
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_text.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_text.c.o
  ..//makise_config.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
@@ -3359,7 +2652,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_text.c.o
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
@@ -3375,7 +2667,6 @@ CMakeFiles/core_src.elf.dir/MakiseGUI/MakiseGUI/makise_text.c.o
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_text.c
  /mnt/doc/prj/osfi-p/core_src/MakiseGUI/MakiseGUI/makise_text.h
 CMakeFiles/core_src.elf.dir/MakiseGUI/docs/examples/mutex.c.o
- /mnt/doc/prj/osfi-p/core_src/MakiseGUI/docs/examples/mutex.c
 CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.o
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
@@ -3573,6 +2864,321 @@ CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usb
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
  /mnt/doc/prj/osfi-p/core_src/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
+ ../Inc/main.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/diskio.c
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/diskio.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/integer.h
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
+ ../Inc/main.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/diskio.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.c
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/integer.h
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
+ ../Inc/main.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/diskio.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/integer.h
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
+ ../Inc/main.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/integer.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
+ ../Inc/main.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/integer.h
+ /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/syscall.c
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o
  ../Drivers/CMSIS/Include/cmsis_armcc.h
  ../Drivers/CMSIS/Include/cmsis_gcc.h
@@ -3699,6 +3305,161 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/timers.c
+CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/stm32f4xx_hal_conf.h
+ /mnt/doc/prj/osfi-p/core_src/Src/bsp_driver_sd.c
+CMakeFiles/core_src.elf.dir/Src/dma.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/dma.h
+ ../Inc/main.h
+ ../Inc/stm32f4xx_hal_conf.h
+ /mnt/doc/prj/osfi-p/core_src/Src/dma.c
+CMakeFiles/core_src.elf.dir/Src/fatfs.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/fatfs.h
+ ../Inc/ffconf.h
+ ../Inc/main.h
+ ../Inc/sd_diskio.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../Middlewares/Third_Party/FatFs/src/diskio.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Src/fatfs.c
 CMakeFiles/core_src.elf.dir/Src/freertos.c.o
  ..//makise_config.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
@@ -3744,11 +3505,25 @@ CMakeFiles/core_src.elf.dir/Src/freertos.c.o
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
+ ../Inc/sdio.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
+ ../MakiseGUI/MakiseGUI/fonts/fonts.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_fsviewer.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_lable.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_message_window.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slider.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slist.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_tabs.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_text_field.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_toggle.h
+ ../MakiseGUI/MakiseGUI/gui/elements/makise_e.h
  ../MakiseGUI/MakiseGUI/gui/makise_gui.h
  ../MakiseGUI/MakiseGUI/gui/makise_gui_container.h
  ../MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
@@ -3760,6 +3535,8 @@ CMakeFiles/core_src.elf.dir/Src/freertos.c.o
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
@@ -3774,6 +3551,7 @@ CMakeFiles/core_src.elf.dir/Src/freertos.c.o
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/Src/freertos.c
+ /mnt/doc/prj/osfi-p/core_src/Src/gui.h
 CMakeFiles/core_src.elf.dir/Src/gpio.c.o
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
@@ -3864,11 +3642,12 @@ CMakeFiles/core_src.elf.dir/Src/gui.c.o
  ../ILI9341/ili9341.h
  ../ILI9341/ili9341_registers.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/main.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
- ../Inc/tim.h
  ../MakiseGUI/MakiseGUI/fonts/fonts.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
  ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
@@ -3892,13 +3671,20 @@ CMakeFiles/core_src.elf.dir/Src/gui.c.o
  ../MakiseGUI/MakiseGUI/makise_colors.h
  ../MakiseGUI/MakiseGUI/makise_primitives.h
  ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/Src/gui.c
  /mnt/doc/prj/osfi-p/core_src/Src/gui.h
@@ -4034,10 +3820,15 @@ CMakeFiles/core_src.elf.dir/Src/main.c.o
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
  ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/dma.h
+ ../Inc/fatfs.h
+ ../Inc/ffconf.h
  ../Inc/gpio.h
  ../Inc/i2c.h
  ../Inc/i2s.h
  ../Inc/main.h
+ ../Inc/sd_diskio.h
  ../Inc/sdio.h
  ../Inc/spi.h
  ../Inc/stm32f4xx_hal_conf.h
@@ -4046,6 +3837,10 @@ CMakeFiles/core_src.elf.dir/Src/main.c.o
  ../Inc/usb_device.h
  ../Inc/usbd_conf.h
  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
+ ../Middlewares/Third_Party/FatFs/src/diskio.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
  ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
@@ -4060,6 +3855,71 @@ CMakeFiles/core_src.elf.dir/Src/main.c.o
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
  /mnt/doc/prj/osfi-p/core_src/Src/main.c
+CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
+ ../Inc/main.h
+ ../Inc/sd_diskio.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../Middlewares/Third_Party/FatFs/src/diskio.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Src/sd_diskio.c
 CMakeFiles/core_src.elf.dir/Src/sdio.c.o
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
@@ -4339,6 +4199,97 @@ CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
  ../Inc/stm32f4xx_hal_conf.h
  /mnt/doc/prj/osfi-p/core_src/Src/system_stm32f4xx.c
+CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o
+ ..//makise_config.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm4.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+ ../ILI9341/ili9341.h
+ ../ILI9341/ili9341_registers.h
+ ../Inc/FreeRTOSConfig.h
+ ../Inc/bsp_driver_sd.h
+ ../Inc/ffconf.h
+ ../Inc/gpio.h
+ ../Inc/main.h
+ ../Inc/spi.h
+ ../Inc/stm32f4xx_hal_conf.h
+ ../MakiseGUI/MakiseGUI/fonts/fonts.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_fsviewer.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_lable.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_message_window.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slider.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slist.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_tabs.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_text_field.h
+ ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_toggle.h
+ ../MakiseGUI/MakiseGUI/gui/elements/makise_e.h
+ ../MakiseGUI/MakiseGUI/gui/makise_gui.h
+ ../MakiseGUI/MakiseGUI/gui/makise_gui_container.h
+ ../MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
+ ../MakiseGUI/MakiseGUI/gui/makise_gui_input.h
+ ../MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
+ ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
+ ../MakiseGUI/MakiseGUI/makise.h
+ ../MakiseGUI/MakiseGUI/makise_bitmap.h
+ ../MakiseGUI/MakiseGUI/makise_colors.h
+ ../MakiseGUI/MakiseGUI/makise_primitives.h
+ ../MakiseGUI/MakiseGUI/makise_text.h
+ ../Middlewares/Third_Party/FatFs/src/ff.h
+ ../Middlewares/Third_Party/FatFs/src/integer.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+ /mnt/doc/prj/osfi-p/core_src/Src/gui.h
+ /mnt/doc/prj/osfi-p/core_src/Src/tests_hello.c
 CMakeFiles/core_src.elf.dir/Src/tim.c.o
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h

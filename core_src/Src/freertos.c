@@ -28,6 +28,8 @@
 /* USER CODE BEGIN Includes */     
 #include "makise_gui.h"
 #include "ili9341.h"
+#include "gui.h"
+#include "sdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,6 +61,7 @@ osThreadId defaultTaskHandle;
 void StartDefaultTask(void const * argument);
 
 extern void MX_USB_DEVICE_Init(void);
+extern void MX_FATFS_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /**
@@ -99,6 +102,7 @@ void MX_FREERTOS_Init(void) {
 }
 
 /* USER CODE BEGIN Header_StartDefaultTask */
+extern char SDPath[4];
 /**
   * @brief  Function implementing the defaultTask thread.
   * @param  argument: Not used 
@@ -110,12 +114,24 @@ void StartDefaultTask(void const * argument)
   /* init code for USB_DEVICE */
   MX_USB_DEVICE_Init();
 
+  /* init code for FATFS */
+  MX_FATFS_Init();
+
   /* USER CODE BEGIN StartDefaultTask */
+  FATFS fileSystem;
+  FIL testFile;
+  uint8_t testBuffer[16] = "SD write success";
+  UINT testBytes;
+  FRESULT res;
+
   
+
+  gui_init();
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+      //HAL_GPIO_TogglePin(ILI9341_LED);
+      osDelay(500);
   }
   /* USER CODE END StartDefaultTask */
 }

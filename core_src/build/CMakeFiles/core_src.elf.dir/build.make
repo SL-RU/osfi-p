@@ -863,9 +863,74 @@ CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usb
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c -o CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s
 
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o: ../Middlewares/Third_Party/FatFs/src/diskio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/diskio.c
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/diskio.c > CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/diskio.c -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o: ../Middlewares/Third_Party/FatFs/src/ff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.c
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.c > CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff.c -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c > CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o: ../Middlewares/Third_Party/FatFs/src/option/ccsbcs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c > CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o: ../Middlewares/Third_Party/FatFs/src/option/syscall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/syscall.c
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/syscall.c > CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i
+
+CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FatFs/src/option/syscall.c -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s
+
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -878,7 +943,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -891,7 +956,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -904,7 +969,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/list.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
@@ -917,7 +982,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s: cm
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i: cmake_force
@@ -930,7 +995,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -943,7 +1008,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/Mem
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/queue.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
@@ -956,7 +1021,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s: c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i: cmake_force
@@ -969,7 +1034,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffe
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -982,7 +1047,7 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s: c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o   -c /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/timers.c
 
 CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
@@ -993,9 +1058,48 @@ CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Middlewares/Third_Party/FreeRTOS/Source/timers.c -o CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o: ../Src/bsp_driver_sd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/bsp_driver_sd.c
+
+CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Src/bsp_driver_sd.c > CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.i
+
+CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Src/bsp_driver_sd.c -o CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.s
+
+CMakeFiles/core_src.elf.dir/Src/dma.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Src/dma.c.o: ../Src/dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/core_src.elf.dir/Src/dma.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/dma.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/dma.c
+
+CMakeFiles/core_src.elf.dir/Src/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Src/dma.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Src/dma.c > CMakeFiles/core_src.elf.dir/Src/dma.c.i
+
+CMakeFiles/core_src.elf.dir/Src/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Src/dma.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Src/dma.c -o CMakeFiles/core_src.elf.dir/Src/dma.c.s
+
+CMakeFiles/core_src.elf.dir/Src/fatfs.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Src/fatfs.c.o: ../Src/fatfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/core_src.elf.dir/Src/fatfs.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/fatfs.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/fatfs.c
+
+CMakeFiles/core_src.elf.dir/Src/fatfs.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Src/fatfs.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Src/fatfs.c > CMakeFiles/core_src.elf.dir/Src/fatfs.c.i
+
+CMakeFiles/core_src.elf.dir/Src/fatfs.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Src/fatfs.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Src/fatfs.c -o CMakeFiles/core_src.elf.dir/Src/fatfs.c.s
+
 CMakeFiles/core_src.elf.dir/Src/freertos.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/freertos.c.o: ../Src/freertos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/core_src.elf.dir/Src/freertos.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/core_src.elf.dir/Src/freertos.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/freertos.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/freertos.c
 
 CMakeFiles/core_src.elf.dir/Src/freertos.c.i: cmake_force
@@ -1008,7 +1112,7 @@ CMakeFiles/core_src.elf.dir/Src/freertos.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/gpio.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/gpio.c.o: ../Src/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/core_src.elf.dir/Src/gpio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/core_src.elf.dir/Src/gpio.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/gpio.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/gpio.c
 
 CMakeFiles/core_src.elf.dir/Src/gpio.c.i: cmake_force
@@ -1021,7 +1125,7 @@ CMakeFiles/core_src.elf.dir/Src/gpio.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/gui.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/gui.c.o: ../Src/gui.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/core_src.elf.dir/Src/gui.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/core_src.elf.dir/Src/gui.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/gui.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/gui.c
 
 CMakeFiles/core_src.elf.dir/Src/gui.c.i: cmake_force
@@ -1034,7 +1138,7 @@ CMakeFiles/core_src.elf.dir/Src/gui.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/i2c.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/i2c.c.o: ../Src/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/core_src.elf.dir/Src/i2c.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/core_src.elf.dir/Src/i2c.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/i2c.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/i2c.c
 
 CMakeFiles/core_src.elf.dir/Src/i2c.c.i: cmake_force
@@ -1047,7 +1151,7 @@ CMakeFiles/core_src.elf.dir/Src/i2c.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/i2s.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/i2s.c.o: ../Src/i2s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/core_src.elf.dir/Src/i2s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/core_src.elf.dir/Src/i2s.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/i2s.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/i2s.c
 
 CMakeFiles/core_src.elf.dir/Src/i2s.c.i: cmake_force
@@ -1060,7 +1164,7 @@ CMakeFiles/core_src.elf.dir/Src/i2s.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/main.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/core_src.elf.dir/Src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/core_src.elf.dir/Src/main.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/main.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/main.c
 
 CMakeFiles/core_src.elf.dir/Src/main.c.i: cmake_force
@@ -1071,9 +1175,22 @@ CMakeFiles/core_src.elf.dir/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Src/main.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Src/main.c -o CMakeFiles/core_src.elf.dir/Src/main.c.s
 
+CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o: ../Src/sd_diskio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/sd_diskio.c
+
+CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Src/sd_diskio.c > CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.i
+
+CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Src/sd_diskio.c -o CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.s
+
 CMakeFiles/core_src.elf.dir/Src/sdio.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/sdio.c.o: ../Src/sdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/core_src.elf.dir/Src/sdio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/core_src.elf.dir/Src/sdio.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/sdio.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/sdio.c
 
 CMakeFiles/core_src.elf.dir/Src/sdio.c.i: cmake_force
@@ -1086,7 +1203,7 @@ CMakeFiles/core_src.elf.dir/Src/sdio.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/spi.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/spi.c.o: ../Src/spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/core_src.elf.dir/Src/spi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/core_src.elf.dir/Src/spi.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/spi.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/spi.c
 
 CMakeFiles/core_src.elf.dir/Src/spi.c.i: cmake_force
@@ -1099,7 +1216,7 @@ CMakeFiles/core_src.elf.dir/Src/spi.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.o: ../Src/stm32f4xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/stm32f4xx_hal_msp.c
 
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -1112,7 +1229,7 @@ CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.o: ../Src/stm32f4xx_hal_timebase_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/stm32f4xx_hal_timebase_tim.c
 
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.i: cmake_force
@@ -1125,7 +1242,7 @@ CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.o: ../Src/stm32f4xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/stm32f4xx_it.c
 
 CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.i: cmake_force
@@ -1138,7 +1255,7 @@ CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o: ../Src/system_stm32f4xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/system_stm32f4xx.c
 
 CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.i: cmake_force
@@ -1149,9 +1266,22 @@ CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Src/system_stm32f4xx.c -o CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.s
 
+CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o: CMakeFiles/core_src.elf.dir/flags.make
+CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o: ../Src/tests_hello.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/tests_hello.c
+
+CMakeFiles/core_src.elf.dir/Src/tests_hello.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/core_src.elf.dir/Src/tests_hello.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/doc/prj/osfi-p/core_src/Src/tests_hello.c > CMakeFiles/core_src.elf.dir/Src/tests_hello.c.i
+
+CMakeFiles/core_src.elf.dir/Src/tests_hello.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/core_src.elf.dir/Src/tests_hello.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/doc/prj/osfi-p/core_src/Src/tests_hello.c -o CMakeFiles/core_src.elf.dir/Src/tests_hello.c.s
+
 CMakeFiles/core_src.elf.dir/Src/tim.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/tim.c.o: ../Src/tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/core_src.elf.dir/Src/tim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/core_src.elf.dir/Src/tim.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/tim.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/tim.c
 
 CMakeFiles/core_src.elf.dir/Src/tim.c.i: cmake_force
@@ -1164,7 +1294,7 @@ CMakeFiles/core_src.elf.dir/Src/tim.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/usart.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/usart.c.o: ../Src/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/core_src.elf.dir/Src/usart.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/core_src.elf.dir/Src/usart.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/usart.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/usart.c
 
 CMakeFiles/core_src.elf.dir/Src/usart.c.i: cmake_force
@@ -1177,7 +1307,7 @@ CMakeFiles/core_src.elf.dir/Src/usart.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/usb_device.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/usb_device.c.o: ../Src/usb_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/core_src.elf.dir/Src/usb_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/core_src.elf.dir/Src/usb_device.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/usb_device.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/usb_device.c
 
 CMakeFiles/core_src.elf.dir/Src/usb_device.c.i: cmake_force
@@ -1190,7 +1320,7 @@ CMakeFiles/core_src.elf.dir/Src/usb_device.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/usbd_cdc_if.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/usbd_cdc_if.c.o: ../Src/usbd_cdc_if.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/core_src.elf.dir/Src/usbd_cdc_if.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/core_src.elf.dir/Src/usbd_cdc_if.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/usbd_cdc_if.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/usbd_cdc_if.c
 
 CMakeFiles/core_src.elf.dir/Src/usbd_cdc_if.c.i: cmake_force
@@ -1203,7 +1333,7 @@ CMakeFiles/core_src.elf.dir/Src/usbd_cdc_if.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/usbd_conf.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/usbd_conf.c.o: ../Src/usbd_conf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/core_src.elf.dir/Src/usbd_conf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/core_src.elf.dir/Src/usbd_conf.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/usbd_conf.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/usbd_conf.c
 
 CMakeFiles/core_src.elf.dir/Src/usbd_conf.c.i: cmake_force
@@ -1216,7 +1346,7 @@ CMakeFiles/core_src.elf.dir/Src/usbd_conf.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.o: ../Src/usbd_desc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.o   -c /mnt/doc/prj/osfi-p/core_src/Src/usbd_desc.c
 
 CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.i: cmake_force
@@ -1229,7 +1359,7 @@ CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.s: cmake_force
 
 CMakeFiles/core_src.elf.dir/startup/startup_stm32f427xx.s.o: CMakeFiles/core_src.elf.dir/flags.make
 CMakeFiles/core_src.elf.dir/startup/startup_stm32f427xx.s.o: ../startup/startup_stm32f427xx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building ASM object CMakeFiles/core_src.elf.dir/startup/startup_stm32f427xx.s.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building ASM object CMakeFiles/core_src.elf.dir/startup/startup_stm32f427xx.s.o"
 	arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/core_src.elf.dir/startup/startup_stm32f427xx.s.o -c /mnt/doc/prj/osfi-p/core_src/startup/startup_stm32f427xx.s
 
 # Object files for target core_src.elf
@@ -1296,6 +1426,11 @@ core_src_elf_OBJECTS = \
 "CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.o" \
 "CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.o" \
 "CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.o" \
+"CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o" \
+"CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o" \
+"CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o" \
+"CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o" \
+"CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o" \
 "CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o" \
 "CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o" \
 "CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o" \
@@ -1306,18 +1441,23 @@ core_src_elf_OBJECTS = \
 "CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o" \
 "CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o" \
 "CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o" \
+"CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o" \
+"CMakeFiles/core_src.elf.dir/Src/dma.c.o" \
+"CMakeFiles/core_src.elf.dir/Src/fatfs.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/freertos.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/gpio.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/gui.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/i2c.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/i2s.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/main.c.o" \
+"CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/sdio.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/spi.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o" \
+"CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/tim.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/usart.c.o" \
 "CMakeFiles/core_src.elf.dir/Src/usb_device.c.o" \
@@ -1391,6 +1531,11 @@ core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Librar
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.o
@@ -1401,18 +1546,23 @@ core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Sourc
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Src/dma.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Src/fatfs.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/freertos.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/gpio.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/gui.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/i2c.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/i2s.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/main.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/sdio.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/spi.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_msp.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/stm32f4xx_hal_timebase_tim.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/stm32f4xx_it.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.o
+core_src.elf: CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/tim.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/usart.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/Src/usb_device.c.o
@@ -1422,7 +1572,7 @@ core_src.elf: CMakeFiles/core_src.elf.dir/Src/usbd_desc.c.o
 core_src.elf: CMakeFiles/core_src.elf.dir/startup/startup_stm32f427xx.s.o
 core_src.elf: CMakeFiles/core_src.elf.dir/build.make
 core_src.elf: CMakeFiles/core_src.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Linking C executable core_src.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/doc/prj/osfi-p/core_src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Linking C executable core_src.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core_src.elf.dir/link.txt --verbose=$(VERBOSE)
 	arm-none-eabi-size core_src.elf
 

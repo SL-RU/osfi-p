@@ -1823,6 +1823,141 @@ Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s:
 	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s
 .PHONY : Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s
 
+Middlewares/Third_Party/FatFs/src/diskio.o: Middlewares/Third_Party/FatFs/src/diskio.c.o
+
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.o
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/diskio.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.o
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.c.o
+
+Middlewares/Third_Party/FatFs/src/diskio.i: Middlewares/Third_Party/FatFs/src/diskio.c.i
+
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/diskio.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.c.i
+
+Middlewares/Third_Party/FatFs/src/diskio.s: Middlewares/Third_Party/FatFs/src/diskio.c.s
+
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/diskio.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/diskio.c.s
+
+Middlewares/Third_Party/FatFs/src/ff.o: Middlewares/Third_Party/FatFs/src/ff.c.o
+
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.o
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/ff.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.o
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.c.o
+
+Middlewares/Third_Party/FatFs/src/ff.i: Middlewares/Third_Party/FatFs/src/ff.c.i
+
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/ff.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.c.i
+
+Middlewares/Third_Party/FatFs/src/ff.s: Middlewares/Third_Party/FatFs/src/ff.c.s
+
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/ff.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/ff.c.s
+
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.o: Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o
+
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.o
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.o
+
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.i: Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i
+
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i
+
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.s: Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
+
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s
+
+Middlewares/Third_Party/FatFs/src/option/ccsbcs.o: Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o
+
+.PHONY : Middlewares/Third_Party/FatFs/src/option/ccsbcs.o
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o
+.PHONY : Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.o
+
+Middlewares/Third_Party/FatFs/src/option/ccsbcs.i: Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i
+
+.PHONY : Middlewares/Third_Party/FatFs/src/option/ccsbcs.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i
+
+Middlewares/Third_Party/FatFs/src/option/ccsbcs.s: Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s
+
+.PHONY : Middlewares/Third_Party/FatFs/src/option/ccsbcs.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s
+
+Middlewares/Third_Party/FatFs/src/option/syscall.o: Middlewares/Third_Party/FatFs/src/option/syscall.c.o
+
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.o
+
+# target to build an object file
+Middlewares/Third_Party/FatFs/src/option/syscall.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.o
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.c.o
+
+Middlewares/Third_Party/FatFs/src/option/syscall.i: Middlewares/Third_Party/FatFs/src/option/syscall.c.i
+
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.i
+
+# target to preprocess a source file
+Middlewares/Third_Party/FatFs/src/option/syscall.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.c.i
+
+Middlewares/Third_Party/FatFs/src/option/syscall.s: Middlewares/Third_Party/FatFs/src/option/syscall.c.s
+
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.s
+
+# target to generate assembly for a file
+Middlewares/Third_Party/FatFs/src/option/syscall.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s
+.PHONY : Middlewares/Third_Party/FatFs/src/option/syscall.c.s
+
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.o
 
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o
@@ -2093,6 +2228,87 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+Src/bsp_driver_sd.o: Src/bsp_driver_sd.c.o
+
+.PHONY : Src/bsp_driver_sd.o
+
+# target to build an object file
+Src/bsp_driver_sd.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.o
+.PHONY : Src/bsp_driver_sd.c.o
+
+Src/bsp_driver_sd.i: Src/bsp_driver_sd.c.i
+
+.PHONY : Src/bsp_driver_sd.i
+
+# target to preprocess a source file
+Src/bsp_driver_sd.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.i
+.PHONY : Src/bsp_driver_sd.c.i
+
+Src/bsp_driver_sd.s: Src/bsp_driver_sd.c.s
+
+.PHONY : Src/bsp_driver_sd.s
+
+# target to generate assembly for a file
+Src/bsp_driver_sd.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/bsp_driver_sd.c.s
+.PHONY : Src/bsp_driver_sd.c.s
+
+Src/dma.o: Src/dma.c.o
+
+.PHONY : Src/dma.o
+
+# target to build an object file
+Src/dma.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/dma.c.o
+.PHONY : Src/dma.c.o
+
+Src/dma.i: Src/dma.c.i
+
+.PHONY : Src/dma.i
+
+# target to preprocess a source file
+Src/dma.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/dma.c.i
+.PHONY : Src/dma.c.i
+
+Src/dma.s: Src/dma.c.s
+
+.PHONY : Src/dma.s
+
+# target to generate assembly for a file
+Src/dma.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/dma.c.s
+.PHONY : Src/dma.c.s
+
+Src/fatfs.o: Src/fatfs.c.o
+
+.PHONY : Src/fatfs.o
+
+# target to build an object file
+Src/fatfs.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/fatfs.c.o
+.PHONY : Src/fatfs.c.o
+
+Src/fatfs.i: Src/fatfs.c.i
+
+.PHONY : Src/fatfs.i
+
+# target to preprocess a source file
+Src/fatfs.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/fatfs.c.i
+.PHONY : Src/fatfs.c.i
+
+Src/fatfs.s: Src/fatfs.c.s
+
+.PHONY : Src/fatfs.s
+
+# target to generate assembly for a file
+Src/fatfs.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/fatfs.c.s
+.PHONY : Src/fatfs.c.s
+
 Src/freertos.o: Src/freertos.c.o
 
 .PHONY : Src/freertos.o
@@ -2255,6 +2471,33 @@ Src/main.c.s:
 	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/main.c.s
 .PHONY : Src/main.c.s
 
+Src/sd_diskio.o: Src/sd_diskio.c.o
+
+.PHONY : Src/sd_diskio.o
+
+# target to build an object file
+Src/sd_diskio.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o
+.PHONY : Src/sd_diskio.c.o
+
+Src/sd_diskio.i: Src/sd_diskio.c.i
+
+.PHONY : Src/sd_diskio.i
+
+# target to preprocess a source file
+Src/sd_diskio.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.i
+.PHONY : Src/sd_diskio.c.i
+
+Src/sd_diskio.s: Src/sd_diskio.c.s
+
+.PHONY : Src/sd_diskio.s
+
+# target to generate assembly for a file
+Src/sd_diskio.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.s
+.PHONY : Src/sd_diskio.c.s
+
 Src/sdio.o: Src/sdio.c.o
 
 .PHONY : Src/sdio.o
@@ -2416,6 +2659,33 @@ Src/system_stm32f4xx.s: Src/system_stm32f4xx.c.s
 Src/system_stm32f4xx.c.s:
 	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/system_stm32f4xx.c.s
 .PHONY : Src/system_stm32f4xx.c.s
+
+Src/tests_hello.o: Src/tests_hello.c.o
+
+.PHONY : Src/tests_hello.o
+
+# target to build an object file
+Src/tests_hello.c.o:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/tests_hello.c.o
+.PHONY : Src/tests_hello.c.o
+
+Src/tests_hello.i: Src/tests_hello.c.i
+
+.PHONY : Src/tests_hello.i
+
+# target to preprocess a source file
+Src/tests_hello.c.i:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/tests_hello.c.i
+.PHONY : Src/tests_hello.c.i
+
+Src/tests_hello.s: Src/tests_hello.c.s
+
+.PHONY : Src/tests_hello.s
+
+# target to generate assembly for a file
+Src/tests_hello.c.s:
+	$(MAKE) -f CMakeFiles/core_src.elf.dir/build.make CMakeFiles/core_src.elf.dir/Src/tests_hello.c.s
+.PHONY : Src/tests_hello.c.s
 
 Src/tim.o: Src/tim.c.o
 
@@ -2785,6 +3055,21 @@ help:
 	@echo "... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
 	@echo "... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.i"
 	@echo "... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.s"
+	@echo "... Middlewares/Third_Party/FatFs/src/diskio.o"
+	@echo "... Middlewares/Third_Party/FatFs/src/diskio.i"
+	@echo "... Middlewares/Third_Party/FatFs/src/diskio.s"
+	@echo "... Middlewares/Third_Party/FatFs/src/ff.o"
+	@echo "... Middlewares/Third_Party/FatFs/src/ff.i"
+	@echo "... Middlewares/Third_Party/FatFs/src/ff.s"
+	@echo "... Middlewares/Third_Party/FatFs/src/ff_gen_drv.o"
+	@echo "... Middlewares/Third_Party/FatFs/src/ff_gen_drv.i"
+	@echo "... Middlewares/Third_Party/FatFs/src/ff_gen_drv.s"
+	@echo "... Middlewares/Third_Party/FatFs/src/option/ccsbcs.o"
+	@echo "... Middlewares/Third_Party/FatFs/src/option/ccsbcs.i"
+	@echo "... Middlewares/Third_Party/FatFs/src/option/ccsbcs.s"
+	@echo "... Middlewares/Third_Party/FatFs/src/option/syscall.o"
+	@echo "... Middlewares/Third_Party/FatFs/src/option/syscall.i"
+	@echo "... Middlewares/Third_Party/FatFs/src/option/syscall.s"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s"
@@ -2815,6 +3100,15 @@ help:
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.o"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.i"
 	@echo "... Middlewares/Third_Party/FreeRTOS/Source/timers.s"
+	@echo "... Src/bsp_driver_sd.o"
+	@echo "... Src/bsp_driver_sd.i"
+	@echo "... Src/bsp_driver_sd.s"
+	@echo "... Src/dma.o"
+	@echo "... Src/dma.i"
+	@echo "... Src/dma.s"
+	@echo "... Src/fatfs.o"
+	@echo "... Src/fatfs.i"
+	@echo "... Src/fatfs.s"
 	@echo "... Src/freertos.o"
 	@echo "... Src/freertos.i"
 	@echo "... Src/freertos.s"
@@ -2833,6 +3127,9 @@ help:
 	@echo "... Src/main.o"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"
+	@echo "... Src/sd_diskio.o"
+	@echo "... Src/sd_diskio.i"
+	@echo "... Src/sd_diskio.s"
 	@echo "... Src/sdio.o"
 	@echo "... Src/sdio.i"
 	@echo "... Src/sdio.s"
@@ -2851,6 +3148,9 @@ help:
 	@echo "... Src/system_stm32f4xx.o"
 	@echo "... Src/system_stm32f4xx.i"
 	@echo "... Src/system_stm32f4xx.s"
+	@echo "... Src/tests_hello.o"
+	@echo "... Src/tests_hello.i"
+	@echo "... Src/tests_hello.s"
 	@echo "... Src/tim.o"
 	@echo "... Src/tim.i"
 	@echo "... Src/tim.s"

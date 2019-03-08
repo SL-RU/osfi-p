@@ -12,12 +12,12 @@
 
 
 #define MAKISE_PRIMITIVES_DRAWER_DEFAULT
-#define MAKISEGUI_DRIVER_DEPTH 4
+#define MAKISEGUI_DRIVER_DEPTH 16
 #define MAKISEGUI_BUFFER_DEPTH 4
 #define MAKISEGUI_BUFFER_DEPTHMASK 0b1111
 
 
-#define MAKISE_BUF_H 320
+#define MAKISE_BUF_H 40
 #define MAKISE_BUF_W 240
 
 //Control section
@@ -37,12 +37,12 @@
 #define MAKISE_E_TABS              0
 #define MAKISE_E_TEXT_FIELD        0
 #define MAKISE_E_TOGGLE            0
-#define MAKISE_E_FSVIEWER          0 //MAKISE_E_FSVIEWER_FATFS
+#define MAKISE_E_FSVIEWER          MAKISE_E_FSVIEWER_FATFS
 
 #define MAKISE_UNICODE             1
 #define MAKISE_DISPLAY_INVERTED    0
 
-#define MAKISE_MUTEX               1
+#define MAKISE_MUTEX               0
 
 #if MAKISE_MUTEX
 #include "FreeRTOS.h"
@@ -51,17 +51,6 @@
 #define MAKISE_MUTEX_TIMEOUT 1000
 
 //implement that functions for your OS
-
-// FONTS. Uncomment to use
-#define MAKISE_FONTS_DEFAULT10X20
-#define MAKISE_FONTS_DEFAULT8X13
-#define MAKISE_FONTS_DEFAULT6X10
-#define MAKISE_FONTS_DEFAULT5X7
-
-//#define MAKISE_COLOR_CUSTOM_TYPE
-//typedef uint8_t MColor;
-//#define MC_Transparent UINT8_MAX
-
 
 //create mutex object
 MAKISE_MUTEX_t m_mutex_create ();
@@ -73,6 +62,16 @@ uint8_t m_mutex_request_grant (MAKISE_MUTEX_t sobj);
 uint8_t m_mutex_release_grant (MAKISE_MUTEX_t sobj);
 #endif
 
+
+// FONTS. Uncomment to use
+#define MAKISE_FONTS_DEFAULT10X20
+#define MAKISE_FONTS_DEFAULT8X13
+#define MAKISE_FONTS_DEFAULT6X10
+#define MAKISE_FONTS_DEFAULT5X7
+
+#define MAKISE_COLOR_CUSTOM_TYPE
+typedef uint32_t MColor;
+#define MC_Transparent UINT32_MAX
 
 #include "ili9341.h"
 
