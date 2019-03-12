@@ -3,12 +3,12 @@
 MakiseGUI    *mGui;
 MHost        *host;
 static MakiseGUI    Gu;
-static MakiseBuffer Bu;
 static MakiseDriver Dr;
 static MHost        hs;
-static MContainer   co;
-static uint32_t Makise_Buffer[38400/4];
-static uint32_t Makise_DBuffer[MAKISE_BUF_H * MAKISE_BUF_H + 1];
+uint32_t
+//__attribute__ ((section (".ccmram")))
+Makise_Buffer[38400/4];
+uint32_t Makise_DBuffer[MAKISE_BUF_H * MAKISE_BUF_H * 2 + 1];
 
 void thello();
 
@@ -27,7 +27,6 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
 	ili9341_spi_txcplt(mGui->driver);
 }
 
-static uint8_t ldf;
 void gui_predraw(MakiseGUI * gui)
 {
    /* if(ldf) */
@@ -131,6 +130,7 @@ MakiseGUI* gui_init()
     host = &hs;
 
     ili9341_driver(dr);
+    memset((uint8_t*)Makise_Buffer, 0, 38400);
 
     makise_gui_autoinit(host,
 			gu, dr,

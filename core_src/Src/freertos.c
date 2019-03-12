@@ -92,9 +92,9 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 1024);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
-
+  gui_init();
+  //osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 2024);
+  //defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -112,10 +112,10 @@ extern char SDPath[4];
 void StartDefaultTask(void const * argument)
 {
   /* init code for USB_DEVICE */
-  MX_USB_DEVICE_Init();
+    //MX_USB_DEVICE_Init();
 
   /* init code for FATFS */
-  MX_FATFS_Init();
+  //MX_FATFS_Init();
 
   /* USER CODE BEGIN StartDefaultTask */
   FATFS fileSystem;
@@ -126,7 +126,7 @@ void StartDefaultTask(void const * argument)
 
   
 
-  gui_init();
+  //gui_init();
   /* Infinite loop */
   for(;;)
   {

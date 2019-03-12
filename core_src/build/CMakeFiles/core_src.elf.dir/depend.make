@@ -3778,6 +3778,7 @@ CMakeFiles/core_src.elf.dir/Src/i2s.c.o: ../Inc/main.h
 CMakeFiles/core_src.elf.dir/Src/i2s.c.o: ../Inc/stm32f4xx_hal_conf.h
 CMakeFiles/core_src.elf.dir/Src/i2s.c.o: ../Src/i2s.c
 
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../makise_config.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
@@ -3818,6 +3819,8 @@ CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/st
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../ILI9341/ili9341.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../ILI9341/ili9341_registers.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Inc/FreeRTOSConfig.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Inc/bsp_driver_sd.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Inc/dma.h
@@ -3835,6 +3838,29 @@ CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Inc/tim.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Inc/usart.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Inc/usb_device.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Inc/usbd_conf.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/fonts/fonts.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_buttons.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_canvas.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_fsviewer.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_lable.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_message_window.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slider.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_slist.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_tabs.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_text_field.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/inc/makise_e_toggle.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/elements/makise_e.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/makise_gui.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/makise_gui_container.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/makise_gui_elements.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/makise_gui_input.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/makise_gui_interface.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/gui/styles/makise_style.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/makise.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/makise_bitmap.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/makise_colors.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/makise_primitives.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../MakiseGUI/MakiseGUI/makise_text.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Middlewares/Third_Party/FatFs/src/ff.h
@@ -3853,6 +3879,7 @@ CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Middlewares/Third_Party/FreeRTOS/So
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
+CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Src/gui.h
 CMakeFiles/core_src.elf.dir/Src/main.c.o: ../Src/main.c
 
 CMakeFiles/core_src.elf.dir/Src/sd_diskio.c.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h

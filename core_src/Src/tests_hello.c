@@ -86,13 +86,13 @@ void thello()
 void tests_hello_init(MHost *h)
 {
     m_create_button(&button, &h->host,
-		    mp_rel(110, 53, 85, 30),
+		    mp_rel(0, 0, 240, 320),
 		    &ts_button);
     m_button_set_click(&button, &click);
-    m_button_set_text(&button, "Click!");
+    m_button_set_text(&button, "Sosy !");
 
     m_create_button(&button1, &h->host,
-		    mp_rel(110, 150, 85, 30),
+		    mp_rel(200, 200, 85, 30),
 		    &ts_button);
     m_button_set_click(&button1, &click1);
     m_button_set_text(&button1, "Click!");
