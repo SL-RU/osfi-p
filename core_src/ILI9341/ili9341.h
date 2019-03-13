@@ -23,7 +23,7 @@
 //#include "tim.h"
 //#endif
 
-void ili9341_driver(MakiseDriver*);
+void ili9341_driver(MakiseDriver*, uint32_t*, uint32_t);
 
 uint8_t ili9341_init (MakiseGUI* gui);
 uint8_t ili9341_start(MakiseGUI* gui);

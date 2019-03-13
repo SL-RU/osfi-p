@@ -17,7 +17,7 @@
 #define MAKISEGUI_BUFFER_DEPTHMASK 0b1111
 
 
-#define MAKISE_BUF_H 20
+#define MAKISE_BUF_H 80
 #define MAKISE_BUF_W 240
 
 //Control section

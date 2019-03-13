@@ -15,14 +15,14 @@ void _ili9341_setAddrWindow(uint16_t x0, uint16_t y0, uint16_t x1,
 
 
 
-void ili9341_driver(MakiseDriver * d)
+void ili9341_driver(MakiseDriver * d, uint32_t* buf, uint32_t size)
 {
     d->lcd_height    = 320;
     d->lcd_width     = 240;
     d->buffer_height = MAKISE_BUF_H;
     d->buffer_width  = MAKISE_BUF_W;
     d->pixeldepth    = 16;
-    d->buffer        = 0;
+    d->buffer        = buf;
     d->size          = MAKISE_BUF_H * MAKISE_BUF_W * 2;
     d->posx          = 0;
     d->posy          = 321;
@@ -212,7 +212,7 @@ void ili9341_tx(MakiseDriver* d)
     _ili9341_dc(1);
     _ili9341_cs(0);
 
-    HAL_SPI_Transmit(&ILI9341_SPI, (uint8_t*)d->buffer, d->size, 100);
+    HAL_SPI_Transmit_DMA(&ILI9341_SPI, (uint8_t*)d->buffer, d->size);
 }
 
 uint8_t ili9341_start(MakiseGUI* gui)
@@ -225,7 +225,7 @@ uint8_t ili9341_start(MakiseGUI* gui)
     //ili9341_set_backlight(gui, 31);
     ili9341_tx(gui->driver);
     printf("start driver\n");
-    ili9341_spi_txcplt(gui->driver);
+    
     return M_OK;
 }
 
@@ -240,8 +240,8 @@ uint8_t ili9341_set_backlight(MakiseGUI* gui, uint8_t val)
 }
 uint8_t ili9341_spi_txhalfcplt(MakiseDriver* d)
 {
-    /* if(d->posy < d->lcd_height) */
-    /*     makise_render(d->gui, 1); */
+    if(d->posy < d->lcd_height)
+        makise_render(d->gui, 1);
     return M_OK;
 }
 uint8_t ili9341_spi_txcplt(MakiseDriver* d)
@@ -256,7 +256,7 @@ uint8_t ili9341_spi_txcplt(MakiseDriver* d)
 	dr = 1;
 	d->posy = 0;
 	
-	memset(bu->buffer + 
+	memset(bu->buffer +
 	       0,//d->lcd_width * (d->lcd_height - d->buffer_height) * bu->pixeldepth / 32,
 	       0,
 	       bu->size);//d->lcd_width * d->buffer_height * bu->pixeldepth / 8);
@@ -269,14 +269,14 @@ uint8_t ili9341_spi_txcplt(MakiseDriver* d)
     }
 
     //HAL_Delay(100);
-    _ili9341_setAddrWindow(0, d->posy, d->lcd_width, d->buffer_height - 1 + d->posy);
-    makise_render(d->gui, 0);
+    _ili9341_setAddrWindow(0, d->posy, d->buffer_width, d->buffer_height - 1 + d->posy);
+    makise_render(d->gui, dr ? 0 : 2);
     
     _ili9341_dc(1);
     _ili9341_cs(0);
 
 
-    HAL_SPI_Transmit(&ILI9341_SPI, (uint8_t*)d->buffer, d->size, 100);
+    HAL_SPI_Transmit_DMA(&ILI9341_SPI, (uint8_t*)d->buffer, d->size);
     //HAL_Delay(30);
     if(dr)
     {
@@ -291,12 +291,11 @@ uint8_t ili9341_spi_txcplt(MakiseDriver* d)
     }
     else
     {
-	memset(bu->buffer + (d->posy - d->buffer_height * 2) *
-	       d->lcd_width * bu->pixeldepth / 32,
-	       0,
-	       d->lcd_width * d->buffer_height * bu->pixeldepth / 8);
+	/* memset(bu->buffer + (d->posy - d->buffer_height * 2) * */
+	/*        d->lcd_width * bu->pixeldepth / 32, */
+	/*        0, */
+	/*        d->lcd_width * d->buffer_height * bu->pixeldepth / 8); */
     }
-    ili9341_spi_txcplt(d);
     return M_OK;
 }
 

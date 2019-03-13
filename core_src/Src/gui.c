@@ -7,8 +7,8 @@ static MakiseDriver Dr;
 static MHost        hs;
 uint32_t
 //__attribute__ ((section (".ccmram")))
-Makise_Buffer[38400/4];
-uint32_t Makise_DBuffer[MAKISE_BUF_H * MAKISE_BUF_H * 2 + 1];
+Makise_Buffer[38400/4] = { 0 };
+uint32_t Makise_DBuffer[9600] = { 0 };
 
 void thello();
 
@@ -16,7 +16,7 @@ void HAL_SPI_TxHalfCpltCallback(SPI_HandleTypeDef *hspi)
 {
     //printf("txHcplt\n");
     if(hspi == &ILI9341_SPI)
-	ili9341_spi_txhalfcplt(mGui->driver);
+        ili9341_spi_txhalfcplt(mGui->driver);
 }
 
 void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
@@ -24,7 +24,7 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
     //printf("txcplt\n");
     thello();
     if(hspi == &ILI9341_SPI)
-	ili9341_spi_txcplt(mGui->driver);
+        ili9341_spi_txcplt(mGui->driver);
 }
 
 void gui_predraw(MakiseGUI * gui)
@@ -39,7 +39,6 @@ void gui_draw(MakiseGUI* gui)
 {
     makise_g_host_call(host, gui, M_G_CALL_DRAW);
 }
-
 
 MInputData inp_handler(MInputData d, MInputResultEnum res)
 {
@@ -129,8 +128,9 @@ MakiseGUI* gui_init()
     MakiseDriver * dr = &Dr;
     host = &hs;
 
-    ili9341_driver(dr);
-    memset((uint8_t*)Makise_Buffer, 0, 38400);
+    ili9341_driver(dr, Makise_DBuffer, sizeof(Makise_DBuffer));
+    memset((uint8_t*)Makise_Buffer, 0, sizeof(Makise_Buffer));
+    memset((uint8_t*)Makise_DBuffer, 0, sizeof(Makise_DBuffer));
 
     makise_gui_autoinit(host,
 			gu, dr,
@@ -140,11 +140,12 @@ MakiseGUI* gui_init()
     ili9341_init(gu);
     
     tests_hello_init(host);
-    
-    gu->driver->buffer = Makise_DBuffer;
-    ili9341_start(gu);
-    
-    
+
     mGui = gu;
+ 
+    ili9341_start(gu);
+
+    
+    
     return gu;
 }

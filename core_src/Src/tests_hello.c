@@ -6,7 +6,7 @@ MakiseStyle_Button ts_button =
     .bitmap_gap = 10,
     .active_delay = 5,
     //          bg       font     border   double_border
-    .normal =  {MC_Black, MC_White, MC_White, 2}, //normal
+    .normal =  {MC_Red, MC_White, MC_White, 2}, //normal
     .focused = {MC_Black, MC_White, MC_White, 6}, //focused
     .active =  {MC_Green, MC_Gray, MC_White, 2}, //active
 };
