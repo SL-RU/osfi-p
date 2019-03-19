@@ -15,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L core:BQ24296 U3
+L core-rescue:BQ24296-core U3
 U 1 1 5C3BFCB9
 P 4350 750
+AR Path="/5C3BFCB9" Ref="U3"  Part="1" 
+AR Path="/5C3BFBF8/5C3BFCB9" Ref="U3"  Part="1" 
 F 0 "U3" H 3750 815 50  0000 C CNN
 F 1 "BQ24296" H 3750 724 50  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-24_4x4mm_Pitch0.5mm" H 4350 750 50  0001 C CNN
@@ -515,7 +517,7 @@ Wire Notes Line
 Wire Notes Line
 	7100 550  600  550 
 $Comp
-L core:LM3671-3.3 U2
+L core-rescue:LM3671-3.3-core U2
 U 1 1 5C3F0F04
 P 1550 3950
 F 0 "U2" H 1550 4275 50  0000 C CNN
@@ -651,7 +653,7 @@ To 3.3V
 Text Notes 750  3250 0    50   ~ 0
 Battery charger & controller
 $Comp
-L core:STM32F427VITx U1
+L core-rescue:STM32F427VITx-core U1
 U 4 1 5C42716C
 P 9050 1750
 F 0 "U1" H 9050 2765 50  0000 C CNN
@@ -1246,7 +1248,7 @@ Connection ~ 3200 4150
 Wire Wire Line
 	3200 4150 3300 4150
 $Comp
-L core:USBLC6-4SC6 U4
+L core-rescue:USBLC6-4SC6-core U4
 U 1 1 5C681E02
 P 5000 4750
 F 0 "U4" H 5250 4400 50  0000 C CNN
@@ -1523,7 +1525,7 @@ Connection ~ 5600 4000
 Wire Wire Line
 	5600 4000 6000 4000
 $Comp
-L core:KXO-V97 U5
+L core-rescue:KXO-V97-core U5
 U 1 1 5C525BA3
 P 7950 4150
 F 0 "U5" H 8100 3900 50  0000 L CNN
@@ -1648,7 +1650,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 4150 7500 4150
 $Comp
-L core:KXO-V97 U6
+L core-rescue:KXO-V97-core U6
 U 1 1 5C68096E
 P 7950 5650
 F 0 "U6" H 8100 5400 50  0000 L CNN
@@ -1848,4 +1850,5 @@ Wire Wire Line
 Wire Wire Line
 	6250 3800 6000 3800
 Connection ~ 6000 3800
+NoConn ~ 4500 4650
 $EndSCHEMATC

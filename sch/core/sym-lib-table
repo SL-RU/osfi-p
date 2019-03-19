@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name core)(type Legacy)(uri /mnt/doc/prj/osfi-p/sch/core/core.lib)(options "")(descr ""))
+  (lib (name core-rescue)(type Legacy)(uri ${KIPRJMOD}/core-rescue.lib)(options "")(descr ""))
 )
