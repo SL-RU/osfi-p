@@ -120,6 +120,25 @@ static void* _get_gui_buffer(uint32_t size)
 
 void tests_hello_init(MHost *h);
 
+void l_write_reg(uint8_t reg, uint32_t d)
+{
+    HAL_GPIO_WritePin(AG_4_GPIO_Port, AG_4_Pin, GPIO_PIN_RESET);
+    uint8_t data[4] = { reg, 0, 0, d & 0xFF };
+    uint8_t dataRx[4] = { 0, 0, 0, 0 };
+    HAL_SPI_TransmitReceive(&hspi4, data, dataRx, 4, 100);
+    HAL_GPIO_WritePin(AG_4_GPIO_Port, AG_4_Pin, GPIO_PIN_SET);
+}
+
+uint32_t l_read_reg(uint8_t reg)
+{
+    HAL_GPIO_WritePin(AG_4_GPIO_Port, AG_4_Pin, GPIO_PIN_RESET);
+    uint8_t data[4] = { reg | 0b00100000, 0, 0, 0 };
+    uint8_t dataRx[4] = { 0, 0, 0, 0 };
+    HAL_SPI_TransmitReceive(&hspi4, data, dataRx, 4, 100);
+    HAL_GPIO_WritePin(AG_4_GPIO_Port, AG_4_Pin, GPIO_PIN_SET);
+    return dataRx[0] | dataRx[0] << 8 | dataRx[0] << 16 | dataRx[3] << 24;
+}
+
 MPosition ma_g_hpo;
 MakiseGUI* gui_init()
 {
@@ -145,7 +164,15 @@ MakiseGUI* gui_init()
  
     ili9341_start(gu);
 
-    
+    printf("L6470\n");
+    HAL_GPIO_WritePin(AG_3_GPIO_Port, AG_3_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(AG_4_GPIO_Port, AG_4_Pin, GPIO_PIN_SET);
+    HAL_Delay(10);
+    HAL_GPIO_WritePin(AG_3_GPIO_Port, AG_3_Pin, GPIO_PIN_SET);
+    HAL_Delay(1);
+    printf("reg %x\n", l_read_reg(0x18));
+    HAL_Delay(1);
+    l_write_reg(0b01000001, 100);
     
     return gu;
 }
