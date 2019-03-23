@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name core)(type KiCad)(uri /mnt/doc/prj/osfi-p/sch/core)(options "")(descr ""))
+  (lib (name core)(type KiCad)(uri ${KIPRJMOD})(options "")(descr ""))
 )
