@@ -95,7 +95,7 @@ Wire Notes Line
 Wire Notes Line
 	7100 550  600  550 
 $Comp
-L core-rescue:LM3671-3.3-core U2
+L core-rescue:LM3671-3.3-core-core-rescue U2
 U 1 1 5C3F0F04
 P 1550 3950
 F 0 "U2" H 1550 4275 50  0000 C CNN
@@ -231,7 +231,7 @@ To 3.3V
 Text Notes 750  3250 0    50   ~ 0
 Battery charger & controller
 $Comp
-L core-rescue:STM32F427VITx-core U1
+L core-rescue:STM32F427VITx-core-core-rescue U1
 U 4 1 5C42716C
 P 9050 1750
 F 0 "U1" H 9050 2765 50  0000 C CNN
@@ -824,7 +824,7 @@ Connection ~ 3200 4150
 Wire Wire Line
 	3200 4150 3300 4150
 $Comp
-L core-rescue:USBLC6-4SC6-core U4
+L core-rescue:USBLC6-4SC6-core-core-rescue U4
 U 1 1 5C681E02
 P 5000 4750
 F 0 "U4" H 5250 4400 50  0000 C CNN
@@ -1022,7 +1022,7 @@ Connection ~ 5600 4000
 Wire Wire Line
 	5600 4000 6000 4000
 $Comp
-L core-rescue:KXO-V97-core U5
+L core-rescue:KXO-V97-core-core-rescue U5
 U 1 1 5C525BA3
 P 7950 4150
 F 0 "U5" H 8100 3900 50  0000 L CNN
@@ -1147,7 +1147,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 4150 7500 4150
 $Comp
-L core-rescue:KXO-V97-core U6
+L core-rescue:KXO-V97-core-core-rescue U6
 U 1 1 5C68096E
 P 7950 5650
 F 0 "U6" H 8100 5400 50  0000 L CNN
@@ -1212,12 +1212,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0137
 U 1 1 5C680991
-P 8100 5150
-F 0 "#PWR0137" H 8100 5000 50  0001 C CNN
-F 1 "+3.3V" H 8115 5323 50  0000 C CNN
-F 2 "" H 8100 5150 50  0001 C CNN
-F 3 "" H 8100 5150 50  0001 C CNN
-	1    8100 5150
+P 8050 5150
+F 0 "#PWR0137" H 8050 5000 50  0001 C CNN
+F 1 "+3.3V" H 8065 5323 50  0000 C CNN
+F 2 "" H 8050 5150 50  0001 C CNN
+F 3 "" H 8050 5150 50  0001 C CNN
+	1    8050 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1403,7 +1403,7 @@ Connection ~ 3000 1000
 Wire Wire Line
 	3000 1000 3000 1050
 $Comp
-L core-rescue:DW01-P U7
+L core-rescue:DW01-P-core-rescue U7
 U 1 1 5CBF741E
 P 5350 2400
 F 0 "U7" H 5350 2915 50  0000 C CNN
@@ -1414,9 +1414,11 @@ F 3 "" H 5300 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L core-rescue:8205 U8
+L core-rescue:8205-core-rescue U8
 U 1 1 5CBF8908
 P 6200 2500
+AR Path="/5CBF8908" Ref="U8"  Part="1" 
+AR Path="/5C3BFBF8/5CBF8908" Ref="U8"  Part="1" 
 F 0 "U8" H 6350 2250 50  0000 C CNN
 F 1 "8205" H 6300 2750 50  0000 C CNN
 F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 6800 2850 50  0001 C CNN
@@ -1613,4 +1615,13 @@ Wire Wire Line
 Wire Wire Line
 	900  1800 1200 1800
 Connection ~ 1200 1800
+Wire Wire Line
+	7950 5250 7950 5200
+Wire Wire Line
+	8050 5150 8050 5200
+Wire Wire Line
+	8050 5200 7950 5200
+Connection ~ 7950 5200
+Wire Wire Line
+	7950 5200 7950 5000
 $EndSCHEMATC

@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L core-rescue:STM32F427VITx-core U1
+L core-rescue:STM32F427VITx-core-core-rescue U1
 U 1 1 5C3BE072
 P 4950 2950
 F 0 "U1" H 4950 3965 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L core-rescue:STM32F427VITx-core U1
+L core-rescue:STM32F427VITx-core-core-rescue U1
 U 2 1 5C3BE13B
 P 8300 2950
 F 0 "U1" H 8300 3965 50  0000 C CNN
@@ -876,7 +876,7 @@ Entry Wire Line
 Wire Wire Line
 	7100 6350 6450 6350
 $Comp
-L core-rescue:STM32F427VITx-core U1
+L core-rescue:STM32F427VITx-core-core-rescue U1
 U 3 1 5C3BE204
 P 1500 2950
 F 0 "U1" H 1606 3965 50  0000 C CNN
@@ -914,17 +914,6 @@ F 2 "" H 2950 5400 50  0001 C CNN
 F 3 "" H 2950 5400 50  0001 C CNN
 	1    2950 5400
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x08 J10
-U 1 1 5C510D95
-P 2350 5900
-F 0 "J10" H 2270 5275 50  0000 C CNN
-F 1 "Conn_01x08" H 2270 5366 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 2350 5900 50  0001 C CNN
-F 3 "~" H 2350 5900 50  0001 C CNN
-	1    2350 5900
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3.3V #PWR0147
@@ -1017,15 +1006,13 @@ Entry Wire Line
 	9900 5450 10000 5550
 Entry Wire Line
 	9900 5350 10000 5450
-Entry Wire Line
-	9900 5250 10000 5350
-Text Label 10100 5350 0    50   ~ 0
-SD_D2
-Text Label 10100 5450 0    50   ~ 0
-SD_D3
-Text Label 10100 5550 0    50   ~ 0
-SD_CMD
 Text Label 10100 5650 0    50   ~ 0
+SD_D2
+Text Label 10100 5550 0    50   ~ 0
+SD_D3
+Text Label 10100 5450 0    50   ~ 0
+SD_CMD
+Text Label 10100 5850 0    50   ~ 0
 SD_D0
 Text Label 10100 5750 0    50   ~ 0
 SD_D1
@@ -1042,10 +1029,6 @@ F 3 "~" H 10600 5000 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	7200 6500 9900 6500
-Wire Wire Line
-	10000 5350 10400 5350
-Wire Wire Line
-	10400 5350 10400 5200
 Wire Wire Line
 	10000 5450 10500 5450
 Wire Wire Line
@@ -1109,6 +1092,40 @@ Wire Wire Line
 	10600 4700 10600 4650
 NoConn ~ 7900 5150
 NoConn ~ 7900 5250
+$Comp
+L Connector_Generic:Conn_01x12 J10
+U 1 1 5C99FBE8
+P 2350 6100
+F 0 "J10" H 2350 6700 50  0000 C CNN
+F 1 "Conn_01x12" H 2350 5400 50  0000 C CNN
+F 2 "core:conn_1_12" H 2350 6100 50  0001 C CNN
+F 3 "~" H 2350 6100 50  0001 C CNN
+	1    2350 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C9C8D86
+P 11000 5000
+F 0 "R5" H 11070 5046 50  0000 L CNN
+F 1 "22k" H 11070 4955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10930 5000 50  0001 C CNN
+F 3 "~" H 11000 5000 50  0001 C CNN
+	1    11000 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5850 11000 5850
+Wire Wire Line
+	11000 5850 11000 5150
+Wire Wire Line
+	11000 4850 11000 4700
+Wire Wire Line
+	11000 4700 10850 4700
+Connection ~ 10850 4700
+Entry Wire Line
+	9900 5750 10000 5850
+NoConn ~ 10400 5200
 Wire Bus Line
 	6750 3950 10100 3950
 Wire Bus Line
